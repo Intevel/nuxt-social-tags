@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-tags",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Conner Luka Bachmann",
+    "email": "github@conner-bachmann.de"
+  },
+  "contributors": [
+    "Intevel <github@conner-bachmann.de>"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "release": "nuxt-module-build && standard-version && git push --follow-tags && npm publish",
+    "lint": "eslint --ext .js,.ts,.vue"
+  },
+  "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "eslint": "latest",
+    "nuxt3": "latest",
+    "standard-version": "^9.3.2"
+  }
+}
