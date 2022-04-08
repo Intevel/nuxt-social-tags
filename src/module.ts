@@ -1,8 +1,6 @@
 import { resolve } from "path";
 import { fileURLToPath } from "url";
 import { defineNuxtModule, addPlugin, addTemplate } from "@nuxt/kit";
-// @ts-ignore
-import { useHead } from "#imports";
 
 export interface ModuleOptions {
   enabled?: boolean;
@@ -67,10 +65,28 @@ export default defineNuxtModule<ModuleOptions>({
       }
 
       metaTags = metaTags.filter((x) => x.content);
-
-      console.log(metaTags);
-
       nuxt.options.app.head.meta = metaTags;
+
+      // Inject options via virtual template
+      nuxt.options.alias["#social-meta-options"] = addTemplate({
+        filename: "social-meta-options.mjs",
+        getContents: () =>
+          Object.entries(options)
+            .map(
+              ([key, value]) =>
+                `export const ${key} = ${JSON.stringify(value, null, 2)}`
+            )
+            .join("\n"),
+      }).dst;
+
+      const runtimeDir = fileURLToPath(new URL("./runtime", import.meta.url));
+      nuxt.options.build.transpile.push(runtimeDir);
+
+      addPlugin(resolve(runtimeDir, "plugin"));
+
+      nuxt.hook("autoImports:dirs", (dirs) => {
+        dirs.push(resolve(runtimeDir, "composables"));
+      });
     }
   },
 });
