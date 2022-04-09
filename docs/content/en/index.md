@@ -7,7 +7,7 @@ menuTitle: "Introduction"
 features:
   - Nuxt3 ready
   - Composables
-  - lightweight
+  - Simple Usage
   - TypeScript Support
 ---
 
