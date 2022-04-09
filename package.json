@@ -1,7 +1,9 @@
 {
   "name": "nuxt-social-tags",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
+  "repository": "https://github.com/intevel/nuxt-directus",
+  "homepage": "https://nuxt-directus.netlify.app/",
   "type": "module",
   "author": {
     "name": "Conner Luka Bachmann",
@@ -40,5 +42,20 @@
     "eslint": "latest",
     "nuxt3": "latest",
     "standard-version": "^9.3.2"
-  }
+  },
+  "keywords": [
+    "nuxt",
+    "vue.meta",
+    "nuxtjs",
+    "nuxt-module",
+    "vue3",
+    "nuxt3",
+    "seo",
+    "nuxt-social-tags",
+    "twitter",
+    "opengraph",
+    "meta-tags",
+    "meta",
+    "nuxt-community"
+  ]
 }
