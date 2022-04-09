@@ -19,7 +19,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: "nuxt-metatags",
+    name: "nuxt-social-meta",
     configKey: "socialtags",
     compatibility: {
       nuxt: "^3.0.0 || ^2.16.0",
