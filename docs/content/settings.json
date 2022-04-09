@@ -1,10 +1,10 @@
 {
-  "title": "Nuxt Social Meta",
-  "url": "https://nuxt-social-meta.netlify.app/",
+  "title": "Nuxt Social Tags",
+  "url": "https://nuxt-social-tags.netlify.app/",
   "logo": {
     "light": "/logo-light.svg",
     "dark": "/logo-dark.svg"
   },
-  "github": "intevel/nuxt-social-meta",
+  "github": "intevel/nuxt-social-tags",
   "twitter": "@heyconnery"
 }
