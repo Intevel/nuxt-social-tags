@@ -13,7 +13,7 @@ Add `nuxt-social-tags` dependency to your project:
   <code-block label="Yarn" active>
 
 ```bash
-yarn add nuxt-social-meta
+yarn add nuxt-social-tags
 ```
 
   </code-block>
