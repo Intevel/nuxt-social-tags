@@ -38,7 +38,7 @@ export const useSocialTags = () => {
 
     metaTags = metaTags.filter((x) => x.content);
     useHead({ meta: metaTags });
-    console.log("[nuxt-metatags] Updated social meta tags.");
+    console.log("[nuxt-social-tags] Updated social meta tags.");
   };
 
   const isObject = (item) => {

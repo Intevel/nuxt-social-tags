@@ -7,7 +7,7 @@ category: "Getting started"
 
 ## Install
 
-Add `nuxt-social-meta` dependency to your project:
+Add `nuxt-social-tags` dependency to your project:
 
 <code-group>
   <code-block label="Yarn" active>
@@ -20,7 +20,7 @@ yarn add nuxt-social-meta
   <code-block label="NPM">
 
 ```bash
-npm install nuxt-social-meta
+npm install nuxt-social-tags
 ```
 
   </code-block>
@@ -30,7 +30,7 @@ Then add it to the `modules` section in your `nuxt.config.js`:
 
 ```js{}[nuxt.config.js]
 export default {
-	modules: ["nuxt-social-meta"],
+	modules: ["nuxt-social-tags"],
 	socialtags: {}
 };
 ```

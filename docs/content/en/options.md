@@ -61,7 +61,7 @@ A twitter username for the twitter meta tags
 import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
-  modules: ["nuxt-social-meta"],
+  modules: ["nuxt-social-tags"],
   socialtags: {
     enabled: true,
     title: "My Title",

@@ -1,20 +1,17 @@
 ---
 title: "Introduction"
-description: "The Directus module for Nuxt 3"
+description: "Easy generation of OpenGraph & Twitter meta-tags in Nuxt 3"
 position: 1
 category: ""
 menuTitle: "Introduction"
 features:
   - Nuxt3 ready
-  - Handle authentication
-  - RESTful methods
+  - Composables
+  - lightweight
   - TypeScript Support
 ---
 
-<img src="/preview.png" class="light-img" width="1280" height="640" />
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" />
-
-Easy [Directus](https://directus.io/) integration for [Nuxt 3](https://v3.nuxtjs.org/).
+Easy generation of OpenGraph & Twitter meta-tags in [Nuxt 3](https://v3.nuxtjs.org/).
 
 ## Features
 
@@ -22,7 +19,7 @@ Easy [Directus](https://directus.io/) integration for [Nuxt 3](https://v3.nuxtjs
 
 ## Links
 
-- [GitHub](https://github.com/intevel/nuxt-directus)
+- [GitHub](https://github.com/intevel/nuxt-social-meta)
 - [Release Notes](/releases)
 
 <alert type="info">
