@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/intevel/nuxt-directus/compare/v1.2.0...v1.2.1) (2022-04-10)
+
+
+### Bug Fixes
+
+* OpenGraph can't be override ([f323fca](https://github.com/intevel/nuxt-directus/commit/f323fca14d23339a84cc022fb21ed16c5ab666c3)), closes [#2](https://github.com/intevel/nuxt-directus/issues/2)
+
 ## [1.2.0](https://github.com/intevel/nuxt-directus/compare/v1.1.1...v1.2.0) (2022-04-10)
 
 
