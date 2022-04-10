@@ -32,7 +32,8 @@ export const useSocialTags = () => {
         { name: "twitter:creator", content: metaOptions.twitter_user },
         { name: "twitter:title", content: metaOptions.title },
         { name: "twitter:description", content: metaOptions.description },
-        { name: "twitter:image", content: metaOptions.img }
+        { name: "twitter:image", content: metaOptions.img },
+		{ name: "twitter:card", content: metaOptions.twitter_card }
       );
     }
 

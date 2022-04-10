@@ -15,6 +15,7 @@ export interface ModuleOptions {
   twitter?: boolean;
   opengraph?: boolean;
   twitter_user?: string;
+  twitter_card?: string;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -59,7 +60,8 @@ export default defineNuxtModule<ModuleOptions>({
           { name: "twitter:creator", content: options.twitter_user },
           { name: "twitter:title", content: options.title },
           { name: "twitter:description", content: options.description },
-          { name: "twitter:image", content: options.img }
+          { name: "twitter:image", content: options.img },
+		  { name: "twitter:card", content: options.twitter_card }
         );
       }
 

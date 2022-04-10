@@ -55,6 +55,11 @@ The module generates opengraph meta tags for facebook, linkedin etc. if `true`
 
 A twitter username for the twitter meta tags
 
+### `twitter_card`
+
+Twitter card property
+https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#started
+
 ### Example configuration
 
 ```ts
