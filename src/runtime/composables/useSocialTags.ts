@@ -3,8 +3,9 @@ import { useHead } from "#imports";
 
 export const useSocialTags = () => {
   const updateSocialTags = async (data: {}): Promise<void> => {
-    const metaOptions = mergeDeep({ ...options }, { ...data });
-    var metaTags = [];
+	  const metaOptions = mergeDeep({ ...options }, { ...data });
+	  console.log(metaOptions)
+	  var metaTags = [];
 
     metaTags.push(
       { name: "title", content: metaOptions.title },
@@ -19,10 +20,10 @@ export const useSocialTags = () => {
         { property: "og:title", content: metaOptions.title },
         { property: "og:description", content: metaOptions.description },
         { property: "og:type", content: "website" },
-        { property: "og:locale", content: options.locale },
-        { property: "og:url", content: options.url },
-        { property: "og:image", content: options.img },
-        { property: "og:site_name", content: options.site_name }
+        { property: "og:locale", content: metaOptions.locale },
+        { property: "og:url", content: metaOptions.url },
+        { property: "og:image", content: metaOptions.img },
+        { property: "og:site_name", content: metaOptions.site_name }
       );
     }
 
@@ -36,6 +37,7 @@ export const useSocialTags = () => {
 		{ name: "twitter:card", content: metaOptions.twitter_card }
       );
     }
+
 
     metaTags = metaTags.filter((x) => x.content);
     useHead({ meta: metaTags });
