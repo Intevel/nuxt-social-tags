@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/intevel/nuxt-social-tags/compare/v1.2.1...v1.2.2) (2022-04-23)
+
+
+### Bug Fixes
+
+* **docs:** readme badges removed ([a6976b1](https://github.com/intevel/nuxt-social-tags/commit/a6976b14f9bf2361e3bad83336d6cfa181eb92b8))
+
 ### [1.2.1](https://github.com/intevel/nuxt-directus/compare/v1.2.0...v1.2.1) (2022-04-10)
 
 
