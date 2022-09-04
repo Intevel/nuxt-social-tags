@@ -23,7 +23,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: "nuxt-social-tags",
     configKey: "socialtags",
     compatibility: {
-      nuxt: "^3.0.0",
+      nuxt: "^3.0.0-rc.9",
     },
     defaults: {
       enabled: true,
