@@ -65,8 +65,10 @@ export default defineNuxtModule<ModuleOptions>({
         );
       }
 
-      metaTags = metaTags.filter((x) => x.content);
-      nuxt.options.app.head.meta = metaTags;
+      metaTags = metaTags.filter(x => x.content)
+
+      const existingMetaTags = nuxt.options.app.head.meta || []
+      nuxt.options.app.head.meta = [...existingMetaTags, ...metaTags]
 
       // Inject options via virtual template
       nuxt.options.alias["#social-meta-options"] = addTemplate({
