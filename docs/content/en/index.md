@@ -11,7 +11,7 @@ features:
   - TypeScript Support
 ---
 
-Easy generation of OpenGraph & Twitter meta-tags in [Nuxt 3](https://v3.nuxtjs.org/).
+Easy generation of OpenGraph & Twitter meta-tags in [Nuxt 3](https://nuxt.com/).
 
 ## Features
 
@@ -19,7 +19,7 @@ Easy generation of OpenGraph & Twitter meta-tags in [Nuxt 3](https://v3.nuxtjs.o
 
 ## Links
 
-- [GitHub](https://github.com/intevel/nuxt-social-meta)
+- [GitHub](https://github.com/intevel/nuxt-social-tags)
 - [Release Notes](/releases)
 
 <alert type="info">
